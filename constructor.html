@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Constructor in JS</title>
+    </head>
+    <body>
+        <h1>This is an example of using constructor in JS!!!!</h1>
+    </body>
+    <script>
+        function Laptop(laptopram , brand , processor , storage)
+        {
+            this.ram = laptopram
+            this.brand = brand
+            this.processor = processor
+            this.storage = storage
+        }
+
+        let laptop1 = new Laptop(32 , "HP" , "i5" , "1TB")
+        let laptop2 = new Laptop(16 , "LIGION" , "i7" , "2TB")
+        console.log(laptop1)
+        console.log(laptop2)
+    </script>
+</html>

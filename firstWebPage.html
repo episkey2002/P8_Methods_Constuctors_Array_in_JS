@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HELLO WORLD!!</title>
+    </head>
+    <body>
+        <h1>My First WebPage</h1>
+        <h2>Heading - 2</h2>
+        <h3>Heading - 3</h3>
+        <p>This is an example of paragraph tag!!</p>
+        <p id="sayHello"></p>
+        <p id="addition"></p>
+        <p id="multiplication"></p>
+
+        <script>
+            function greet(user)
+            {
+                return `Hello ${user}`
+            }
+            function addition(num1, num2)
+            {
+                let output = num1 + num2
+                return output
+            }
+            function multiplication(num1, num2)
+            {
+                let output = num1 * num2
+                return output
+            }
+            document.getElementById("sayHello").innerHTML = greet("Priti")
+            document.getElementById("addition").innerHTML = addition(8 , 8)
+            document.getElementById("multiplication").innerHTML = addition(4 , 8)
+        </script>
+    </body>
+</html>
